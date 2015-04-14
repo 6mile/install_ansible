@@ -4,7 +4,7 @@
 rhel5 () {
 mkdir /opt/ansible
 echo "installing EPEL repo..."
-rpm -ivh http://vlslciweb01.regence.com:8888/Software/NextGen/epel-release-5-4.noarch.rpm
+rpm -ivh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
 echo "installing Ansible 1.8.x ..."
 yum -y --enablerepo="rhel-5-server-optional-rpms" install ansible
 mv /etc/ansible/hosts /etc/ansible/orig.hosts
@@ -16,7 +16,7 @@ sed -i 's/#host_key_checking = False/host_key_checking = False/g' /etc/ansible/a
 rhel6 () {
 mkdir /opt/ansible
 echo "installing EPEL repo..."
-rpm -ivh http://vlslciweb01.regence.com:8888/Software/NextGen/epel-release-6-8.noarch.rpm
+rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 echo "installing Ansible 1.8.x ..."
 yum -y --enablerepo="rhel-6-server-optional-rpms" install ansible
 mv /etc/ansible/hosts /etc/ansible/orig.hosts
@@ -28,7 +28,7 @@ sed -i 's/#host_key_checking = False/host_key_checking = False/g' /etc/ansible/a
 rhel7 () {
 mkdir /opt/ansible
 echo "installing EPEL repo..."
-rpm -ivh http://vlslciweb01.regence.com:8888/Software/NextGen/epel-release-7-5.noarch.rpm
+rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 echo "installing Ansible 1.8.x ..."
 yum -y --enablerepo="rhel-7-server-optional-rpms" install ansible
 mv /etc/ansible/hosts /etc/ansible/orig.hosts
