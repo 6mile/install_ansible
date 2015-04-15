@@ -7,7 +7,7 @@ mkdir /opt/ansible
 echo "installing EPEL repo..."
 rpm -ivh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
 echo "installing Ansible 1.8.x ..."
-yum -y --enablerepo="rhel-5-server-optional-rpms" install ansible
+yum -y --enablerepo="rhel-5-server-optional-rpms" install ansible || yum -y install ansible
 mv /etc/ansible/hosts /etc/ansible/orig.hosts
 echo "127.0.0.1">>/etc/ansible/hosts
 yum -y install sshpass
@@ -19,7 +19,7 @@ mkdir /opt/ansible
 echo "installing EPEL repo..."
 rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 echo "installing Ansible 1.8.x ..."
-yum -y --enablerepo="rhel-6-server-optional-rpms" install ansible
+yum -y --enablerepo="rhel-6-server-optional-rpms" install ansible || yum -y install ansible
 mv /etc/ansible/hosts /etc/ansible/orig.hosts
 echo "127.0.0.1">>/etc/ansible/hosts
 yum -y install sshpass
@@ -31,7 +31,7 @@ mkdir /opt/ansible
 echo "installing EPEL repo..."
 rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 echo "installing Ansible 1.8.x ..."
-yum -y --enablerepo="rhel-7-server-optional-rpms" install ansible
+yum -y --enablerepo="rhel-7-server-optional-rpms" install ansible || yum -y install ansible
 mv /etc/ansible/hosts /etc/ansible/orig.hosts
 echo "127.0.0.1">>/etc/ansible/hosts
 yum -y install sshpass
