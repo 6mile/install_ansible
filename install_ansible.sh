@@ -1,5 +1,6 @@
 #!/bin/bash
 # Paul's script to install Ansible and its basic dependencies 3-5-2015_u0
+# Version 0.2 -- 4/14/2015 6:15pm MT
  
 rhel5 () {
 mkdir /opt/ansible
